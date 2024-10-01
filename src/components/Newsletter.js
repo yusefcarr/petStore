@@ -1,4 +1,5 @@
 import React from 'react';
+import Newsletter from '../Photos/newsletter.png'
 
 const NewsletterPage = () => {
   // Example posts data (you can generate more dynamically or fetch from an API)
@@ -18,7 +19,7 @@ const NewsletterPage = () => {
     <div className="newsletter-page">
       {/* Hero Section */}
       <section className="hero-section">
-        <img src="newsletter_hero.jpg" alt="Newsletter" className="hero-image" />
+        <img src={Newsletter} alt="Newsletter" className="hero-image" />
         <h1 className="hero-title">Newsletter</h1>
         <button className="join-button">Join our mailing list</button>
       </section>

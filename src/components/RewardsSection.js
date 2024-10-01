@@ -1,5 +1,7 @@
 import React from 'react';
-
+import Snake from '../Animals/Snake.jpg';
+import Gecko from '../Animals/Gecko.jpg';
+import Turtle from '../Animals/Turtle.jpg';
 
 const RewardsSection = () => {
   return (
@@ -8,9 +10,9 @@ const RewardsSection = () => {
       <div className="rewards-content">
         {/* Reptile Images */}
         <div className="reptile-images">
-          <img src="snake.jpg" alt="Snake" className="reptile-image" />
-          <img src="gecko.jpg" alt="Gecko" className="reptile-image" />
-          <img src="turtle.jpg" alt="Turtle" className="reptile-image" />
+          <img src={Snake} alt="Snake" className="reptile-image" />
+          <img src={Gecko} alt="Gecko" className="reptile-image" />
+          <img src={Turtle} alt="Turtle" className="reptile-image" />
         </div>
 
         {/* Bullet Points */}

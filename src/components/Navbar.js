@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Logo from '../Logo/Home Logo.png';
 
 const NavBar = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -18,7 +19,7 @@ const NavBar = () => {
           <div className="bar"></div>
           <div className="bar"></div>
         </div>
-        <img src="./petstore/assets/Logo/Scales and Tails Reptile Emporium.png" alt="Logo" className="navbar-logo" />
+        <img src={Logo} alt="Logo" className="navbar-logo" />
       </div>
 
       {/* Search Bar */}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Contact from '../Photos/contact.png'
 
 const ContactPage = () => {
   // Accordion state for FAQs
@@ -16,7 +17,7 @@ const ContactPage = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <h1 className="hero-title">Contact</h1>
-        <img src="gecko_with_headset.jpg" alt="Contact Gecko" className="hero-image" />
+        <img src={Contact} alt="Contact Gecko" className="hero-image" />
       </section>
 
       {/* Live Chat and Contact Form Section */}

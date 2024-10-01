@@ -1,12 +1,12 @@
 import React from 'react';
-
+import DeliveryLogo from '../Logo/delivery_logo.jpg';
 
 const DeliveryServiceSection = () => {
   return (
     <div className="delivery-service-section">
       {/* Left Side - Delivery Service Logo */}
       <div className="delivery-left">
-        <img src="delivery_logo.jpg" alt="Scales and Tails Delivery Service" className="delivery-logo" />
+        <img src={DeliveryLogo} alt="Scales and Tails Delivery Service" className="delivery-logo" />
       </div>
 
       {/* Right Side - Delivery Service Details */}

@@ -9,8 +9,10 @@ const DealsPage = () => {
       {/* Deals by Location */}
       <section className="deals-section">
       <div className='deals'></div>
+      
         <h2>Deals by Location</h2>
         <p>Check out exclusive deals available at our locations across Ohio, including special discounts on reptile products and accessories.</p>
+        <div className='deals-loc'>
         <div className="deal-card">
         <h3>Columbus, OH</h3>
         <p>Save 20% on terrariums and reptile food.</p>
@@ -25,7 +27,7 @@ const DealsPage = () => {
         </div>
         <div className="deal-card">
         <h3>Toledo, OH</h3>
-        <p>Buy 1 Get 1 Free on snake accessories.</p>
+        <p>Buy 1 Get 1 Free on snake accessories.</p></div>
         </div>
       </section>
 
@@ -33,6 +35,7 @@ const DealsPage = () => {
       <section className="deals-section">
         <h2>Delivery Deals</h2>
         <p>Get great deals on delivery for pet products, medication, and food. Available for members only.</p>
+        <div className='deals-loc'>
         <div className="deal-card">
         <h3>Free Delivery on Orders Over $50</h3>
         <p>Get your pet supplies delivered for free when you spend $50 or more!</p>
@@ -49,12 +52,14 @@ const DealsPage = () => {
         <h3>Member-Exclusive: Free Delivery on All Orders</h3>
         <p>Members enjoy free delivery on all orders with no minimum spend required!</p>
         </div>
+        </div>
       </section>
 
       {/* Deals by Pet */}
       <section className="deals-section">
         <h2>Deals by Pet</h2>
         <p>Browse deals specific to your pets, including bearded dragons, snakes, turtles, and more!</p>
+        <div className='deals-loc'>
         <div className="deal-card">
         <h3>Snakes</h3>
         <p>Buy 1 Get 1 Free on all Snake Bedding. Keep your snake’s habitat fresh and clean with this limited-time offer!
@@ -84,12 +89,14 @@ const DealsPage = () => {
         <h3>Lizards</h3>
         <p>Buy 2, Get 1 Free on Lizard Supplements. Keep your lizard thriving with our top-rated vitamin and calcium supplements.</p>
         </div>
+        </div>
       </section>
 
       {/* Member Deals */}
       <section className="deals-section">
         <h2>Member Deals</h2>
         <p>Become a member to enjoy exclusive discounts on products, services, and delivery. Join today for more savings!</p>
+        <div className='deals-loc'>
         <div className="deal-card">
         <h3>Free Delivery on All Orders</h3>
         <p>Members get free delivery on every order, with no minimum spend required. Enjoy the convenience of doorstep service at no extra cost!</p>
@@ -105,6 +112,7 @@ const DealsPage = () => {
         <div className="deal-card">
         <h3>Buy 1, Get 1 50% Off on Food Supplies</h3>
         <p>Stock up on food for your pets with this special offer: Buy 1 food supply item and get the second one 50% off. Applies to all pet types!</p>
+        </div>
         </div>
       </section>
 

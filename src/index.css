@@ -47,7 +47,7 @@
 }
 
 .navbar-logo {
-  width: 50px;
+  width: 200px;
   height: 50px;
   margin-left: 10px;
 }
@@ -306,13 +306,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1.5in; /* Make sure the height is no more than 1 inch */
+  height: 1in; /* Make sure the height is no more than 1 inch */
   box-sizing: border-box;
 }
 
 /* Location Text Styling */
 .location {
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .location h4 {
@@ -350,7 +352,7 @@
 .carousel-text {
   flex: 1;
   color: #3B3B3B;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 .carousel-text h1 {
@@ -439,7 +441,7 @@
   background-color: #f5f5f5; /* Light background */
   border-radius: 10px;
   padding: 20px;
-  max-width: 600px;
+  max-width: 100%;
   margin: auto;
   text-align: center;
 }
@@ -469,7 +471,7 @@
 /* Bullet Points */
 .rewards-benefits {
   list-style-type: disc;
-  text-align: left;
+  text-align: center;
   margin-bottom: 20px;
   padding-left: 20px;
 }
@@ -478,6 +480,7 @@
   font-size: 1.2rem;
   color: #3B3B3B;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 /* Subscribe Button */
@@ -847,6 +850,11 @@
   color: #3B3B3B;
 }
 
+.deals-loc {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .deals-page h1 {
@@ -875,7 +883,7 @@
 }
 
 .intro-section img {
-  width: 100%;
+  width: 25%;
   height: auto;
   max-width: 600px;
   border-radius: 10px;
@@ -1560,7 +1568,7 @@ h2 {
 
 .hero-title {
   font-size: 2.5rem;
-  color: #2F5233; /* Leafy green color */
+  color: black
 }
 
 .hero-image {

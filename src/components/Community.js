@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import ChatRoom from './ChatRoom'; // Import the ChatRoom component
+import Snake from '../Animals/Snake.jpg';
+import Community from '../Photos/community.png'
+
 
 const CommunityPage = () => {
   const [blogPosts, setBlogPosts] = useState([
@@ -18,7 +21,7 @@ const CommunityPage = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <h1 className="hero-title">Community</h1>
-        <img src="community_image.jpg" alt="Community" className="hero-image" />
+        <img src={Community} alt="Community" className="hero-image" />
         <button className="join-button">Join</button>
       </section>
 
@@ -46,7 +49,7 @@ const CommunityPage = () => {
               <span key={index} className="star">★</span>
             ))}
           </div>
-          <img src="pet_image.jpg" alt="Pet" className="vote-pet-image" />
+          <img src={Snake} alt="Pet" className="vote-pet-image" />
         </div>
 
         {/* Tier List Section */}

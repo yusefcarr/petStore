@@ -1,11 +1,19 @@
 import React from 'react';
+import Pharmacy from '../Photos/pharmacy.png';
+import Snake from '../Animals/Snake.jpg';
+import Gecko from '../Animals/Gecko.jpg';
+import Turtle from '../Animals/Turtle.jpg';
+import Chameleon from '../Animals/Chameleon.jpg';
+import Crocodile from '../Animals/Crocodile.jpg';
+import BeardedDragon from '../Animals/BeardedDragon.jpg';
+import Lizard from '../Animals/Lizard.jpg';
 
 const PharmacyPage = () => {
   return (
     <div className="pharmacy-page">
       {/* Hero Section */}
       <section className="hero-section">
-        <img src="pharmacy_hero.jpg" alt="Pharmacy" className="hero-image" />
+        <img src={Pharmacy} alt="Pharmacy" className="hero-image" />
         <h1 className="hero-title">Pharmacy</h1>
       </section>
 
@@ -19,31 +27,31 @@ const PharmacyPage = () => {
         <h2 className="section-title">Shop by Animal</h2>
         <div className="animal-cards">
           <div className="animal-card">
-            <img src="snake.jpg" alt="Snake" className="animal-image" />
+            <img src={Snake} alt="Snake" className="animal-image" />
             <p>Shop Snake</p>
           </div>
           <div className="animal-card">
-            <img src="turtle.jpg" alt="Turtle" className="animal-image" />
+            <img src={Turtle} alt="Turtle" className="animal-image" />
             <p>Shop Turtle</p>
           </div>
           <div className="animal-card">
-            <img src="gecko.jpg" alt="Gecko" className="animal-image" />
+            <img src={Gecko} alt="Gecko" className="animal-image" />
             <p>Shop Gecko</p>
           </div>
           <div className="animal-card">
-            <img src="chameleon.jpg" alt="Chameleon" className="animal-image" />
+            <img src={Chameleon} alt="Chameleon" className="animal-image" />
             <p>Shop Chameleon</p>
           </div>
           <div className="animal-card">
-            <img src="crocodile.jpg" alt="Crocodile" className="animal-image" />
+            <img src={Crocodile} alt="Crocodile" className="animal-image" />
             <p>Shop Crocodile</p>
           </div>
           <div className="animal-card">
-            <img src="bearded_dragon.jpg" alt="Bearded Dragon" className="animal-image" />
+            <img src={BeardedDragon} alt="Bearded Dragon" className="animal-image" />
             <p>Shop Bearded Dragon</p>
           </div>
           <div className="animal-card">
-            <img src="lizard.jpg" alt="Lizard" className="animal-image" />
+            <img src={Lizard} alt="Lizard" className="animal-image" />
             <p>Shop Lizard</p>
           </div>
         </div>

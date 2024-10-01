@@ -1,12 +1,13 @@
 import React from 'react';
+import RewardsHero from '../Photos/rewards_hero.png'
 
 const RewardsPage = () => {
   return (
     <div className="rewards-page">
       {/* Hero Section */}
       <section className="hero-section">
-        <img src="rewards_hero.jpg" alt="Rewards" className="hero-image" />
-        <h1 className="hero-title">Rewards</h1>
+        <img src={RewardsHero} alt="Rewards" className="hero-image" />
+        <h1 className="hero-title_rewards">Rewards</h1>
       </section>
 
       {/* Subscribe Button Section */}
@@ -16,7 +17,7 @@ const RewardsPage = () => {
 
       {/* Rewards Program Section */}
       <section className="rewards-program-section">
-        <img src="rewards_sign.jpg" alt="Rewards Sign" className="rewards-image" />
+        <img src={RewardsHero} alt="Rewards Sign" className="rewards-image" />
         <div className="rewards-info">
           <p>
             Join our exclusive rewards program and enjoy a wide range of benefits! As a member, you’ll have access to exclusive pet products, special discounts, and more.

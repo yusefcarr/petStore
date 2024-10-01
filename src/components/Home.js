@@ -8,6 +8,7 @@ import MostPopularItems from './MostPopularItems';
 import DeliveryServiceSection from './DeliveryServiceSection';
 import WhatsNewSection from './WhatsNewSection';
 
+
 const Home = () => {
     return (
       <div>

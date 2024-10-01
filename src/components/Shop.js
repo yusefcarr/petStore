@@ -1,12 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from React Router
+import Logo from '../Logo/Scales and Tails Reptile Emporium Logo.png'
+import Snake from '../Animals/Snake.jpg';
+import Gecko from '../Animals/Gecko.jpg';
+import Turtle from '../Animals/Turtle.jpg';
+import Chameleon from '../Animals/Chameleon.jpg';
+import Crocodile from '../Animals/Crocodile.jpg';
+import BeardedDragon from '../Animals/BeardedDragon.jpg';
+import Lizard from '../Animals/Lizard.jpg';
 
 const ShopPage = () => {
   return (
     <div className="shop-page">
       {/* Section 1: Image and Paragraph */}
       <section className="intro-section">
-        <img src="reptiles_image.jpg" alt="All Reptiles" className="reptiles-image" />
+        <img src={Logo} alt="Logo" className="reptiles-image" />
         <p>
           Welcome to Scales and Tails! We provide a wide range of reptile products tailored to your pet’s specific needs. Whether you're shopping for snakes, bearded dragons, geckos, turtles, or more, we have everything you need—from habitats and food to toys and accessories. Shop with us today for the best reptile care products available online and in-store.
         </p>
@@ -18,43 +26,43 @@ const ShopPage = () => {
         <div className="pet-cards">
           <div className="pet-card">
             <Link to="/shop/snake">
-              <img src="snake.jpg" alt="Snake" className="pet-image" />
+              <img src={Snake} alt="Snake" className="pet-image" />
             </Link>
             <p>Snake</p>
           </div>
           <div className="pet-card">
             <Link to="/shop/turtle">
-              <img src="turtle.jpg" alt="Turtle" className="pet-image" />
+              <img src={Turtle} alt="Turtle" className="pet-image" />
             </Link>
             <p>Turtle</p>
           </div>
           <div className="pet-card">
             <Link to="/shop/gecko">
-              <img src="gecko.jpg" alt="Gecko" className="pet-image" />
+              <img src={Gecko} alt="Gecko" className="pet-image" />
             </Link>
             <p>Gecko</p>
           </div>
           <div className="pet-card">
             <Link to="/shop/chameleon">
-              <img src="chameleon.jpg" alt="Chameleon" className="pet-image" />
+              <img src={Chameleon} alt="Chameleon" className="pet-image" />
             </Link>
             <p>Chameleon</p>
           </div>
           <div className="pet-card">
             <Link to="/shop/crocodile">
-              <img src="crocodile.jpg" alt="Crocodile" className="pet-image" />
+              <img src={Crocodile} alt="Crocodile" className="pet-image" />
             </Link>
             <p>Crocodile</p>
           </div>
           <div className="pet-card">
             <Link to="/shop/bearded-dragon">
-              <img src="bearded_dragon.jpg" alt="Bearded Dragon" className="pet-image" />
+              <img src={BeardedDragon} alt="Bearded Dragon" className="pet-image" />
             </Link>
             <p>Bearded Dragon</p>
           </div>
           <div className="pet-card">
             <Link to="/shop/lizard">
-              <img src="lizard.jpg" alt="Lizard" className="pet-image" />
+              <img src={Lizard} alt="Lizard" className="pet-image" />
             </Link>
             <p>Lizard</p>
           </div>

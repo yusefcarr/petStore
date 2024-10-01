@@ -1,14 +1,22 @@
 import React from 'react';
+import TurtleLamp from '../Photos/heat_lamp.jpg';
+import GeckoHabitat from '../Photos/gecko_habitat.jpg';
+import LizardFood from '../Photos/lizard_food.jpg';
+import SnakeBedding from '../Photos/snake_bedding.jpg';
+import TurtleFilter from '../Photos/turtle_filter.jpg';
+import DragonLight from '../Photos/dragon_light.jpg';
+import ClimbingDecor from '../Photos/climbing_decor.jpg';
+import SnakeTerrarium from '../Photos/snake_terrarium.jpg';
 
 const products = [
-  { name: 'Reptile Heat Lamp', brand: 'ReptiLux', price: '$29.99', image: 'heat_lamp.jpg' },
-  { name: 'Gecko Habitat Deluxe', brand: 'GeckoWorld', price: '$75.50', image: 'gecko_habitat.jpg' },
-  { name: 'Lizard Food Pack', brand: 'LizardFeast', price: '$15.25', image: 'lizard_food.jpg' },
-  { name: 'Snake Bedding Premium', brand: 'SlytherNest', price: '$22.99', image: 'snake_bedding.jpg' },
-  { name: 'Turtle Water Filter', brand: 'TurtleClean', price: '$18.99', image: 'turtle_filter.jpg' },
-  { name: 'Bearded Dragon Light', brand: 'DragonBright', price: '$35.00', image: 'dragon_light.jpg' },
-  { name: 'Reptile Climbing Decor', brand: 'ClimbMaster', price: '$27.99', image: 'climbing_decor.jpg' },
-  { name: 'Snake Terrarium Kit', brand: 'SerpentHome', price: '$85.00', image: 'snake_terrarium.jpg' },
+  { name: 'Turtle UVB Lamp', brand: 'ReptileWorld', price: '$45.99', image: TurtleLamp },
+  { name: 'Gecko Habitat Deluxe', brand: 'GeckoWorld', price: '$75.50', image: GeckoHabitat },
+  { name: 'Lizard Food Pack', brand: 'LizardFeast', price: '$15.25', image: LizardFood },
+  { name: 'Snake Bedding Premium', brand: 'SlytherNest', price: '$22.99', image: SnakeBedding },
+  { name: 'Turtle Water Filter', brand: 'TurtleClean', price: '$18.99', image: TurtleFilter },
+  { name: 'Bearded Dragon Light', brand: 'DragonBright', price: '$35.00', image: DragonLight },
+  { name: 'Reptile Climbing Decor', brand: 'ClimbMaster', price: '$27.99', image: ClimbingDecor },
+  { name: 'Snake Terrarium Kit', brand: 'SerpentHome', price: '$85.00', image: SnakeTerrarium },
 ];
 
 const MostPopularItems = () => {

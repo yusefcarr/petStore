@@ -1,32 +1,36 @@
 import React from 'react';
+import SnakeTerrarium from '../Photos/snake_terrarium.jpg';
+import GeckoFood from '../Photos/gecko_food.jpg';
+import TurtleCare from '../Photos/turtle_care.jpg';
+import LizardLamp from '../Photos/lizard_lamp.jpg';
 
 const deals = [
   { 
     name: 'Snake Terrarium Bundle', 
     brand: 'Reptile Haven', 
     deal: '20% Off', 
-    image: 'snake_terrarium.jpg', 
+    image: SnakeTerrarium, 
     location: '1234 Reptile Way, Columbus, OH'
   },
   { 
     name: 'Gecko Food Starter Pack', 
     brand: 'GeckoGourmet', 
     deal: '15% Off', 
-    image: 'gecko_food.jpg', 
+    image: GeckoFood, 
     location: '5678 Lizard Lane, Cleveland, OH'
   },
   { 
     name: 'Turtle Care Kit', 
     brand: 'TurtleMasters', 
     deal: 'Buy 1 Get 1 Free', 
-    image: 'turtle_care.jpg', 
+    image: TurtleCare, 
     location: '9101 Snake Blvd, Cincinnati, OH'
   },
   { 
     name: 'Lizard Heat Lamp', 
     brand: 'LizardLux', 
     deal: '30% Off', 
-    image: 'lizard_lamp.jpg', 
+    image: LizardLamp, 
     location: '4321 Turtle St, Toledo, OH'
   },
 ];

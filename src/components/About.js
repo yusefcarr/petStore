@@ -1,4 +1,5 @@
 import React from 'react';
+import Reptiles from '../Photos/reptiles_pic.jpg';
 
 const AboutPage = () => {
   return (
@@ -20,7 +21,7 @@ const AboutPage = () => {
 
       {/* Images of Reptiles */}
       <div className="reptile-images">
-        <img src="reptiles_pic.jpg" alt="Reptiles" className="reptile-image" />
+        <img src={Reptiles} alt="Reptiles" className="reptile-image" />
       </div>
     </div>
   );
