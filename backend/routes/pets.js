@@ -1,6 +1,5 @@
 const express = require('express');
 const Pet = require('../models/Pets');
-
 const router = express.Router();
 
 // Add a new pet

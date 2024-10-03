@@ -14,13 +14,13 @@ import Services from './components/Services';
 import Pharmacy from './components/Pharmacy';
 import Newsletter from './components/Newsletter';
 import Community from './components/Community';
-import SnakeShop from './SnakeShop'; // Individual Shop Pages
-import TurtleShop from './TurtleShop';
-import GeckoShop from './GeckoShop';
-import ChameleonShop from './ChameleonShop';
-import CrocodileShop from './CrocodileShop';
-import BeardedDragonShop from './BeardedDragonShop';
-import LizardShop from './LizardShop';
+// import SnakeShop from './SnakeShop'; // Individual Shop Pages
+// import TurtleShop from './TurtleShop';
+// import GeckoShop from './GeckoShop';
+// import ChameleonShop from './ChameleonShop';
+// import CrocodileShop from './CrocodileShop';
+// import BeardedDragonShop from './BeardedDragonShop';
+// import LizardShop from './LizardShop';
 
 
 function App() {
@@ -36,13 +36,13 @@ function App() {
         <Route path='/contact' element={<Contact/>} />
         <Route path='/deals' element={<Deals/>} />
         <Route path='/shop' element={<Shop/>} />
-        <Route path="./shop/snake" component={SnakeShop} />
+        {/* <Route path="./shop/snake" component={SnakeShop} />
         <Route path="./shop/turtle" component={TurtleShop} />
         <Route path="./shop/gecko" component={GeckoShop} />
         <Route path="./shop/chameleon" component={ChameleonShop} />
         <Route path="./shop/crocodile" component={CrocodileShop} />
         <Route path="./shop/bearded-dragon" component={BeardedDragonShop} />
-        <Route path="./shop/lizard" component={LizardShop} />
+        <Route path="./shop/lizard" component={LizardShop} /> */}
         <Route path='/rewards' element={<Rewards/>} />
         <Route path='/services' element={<Services/>} />
         <Route path='/pharmacy' element={<Pharmacy/>} />
