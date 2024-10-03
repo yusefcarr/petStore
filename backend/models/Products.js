@@ -26,7 +26,7 @@ const productSchema = new mongoose.Schema({
   animal: {
     type: String,
     required: true,
-    enum: ['Snake', 'Turtle', 'Gecko', 'Chameleon'], // Add more categories if necessary
+    enum: ['Snake', 'Turtle', 'Gecko', 'Chameleon', 'Crocodile', 'Lizard', 'Bearded Dragon'], // Add more categories if necessary
   },
   imageUrl: {
     type: String, // Store URLs or paths to images
