@@ -32,6 +32,10 @@ connectDB();
 const petRoutes = require('./routes/pets');
 app.use('/api/pets', petRoutes);
 
+// Product routes
+const productRoutes = require('./routes/products');
+app.use('/api/products', productRoutes);
+
 // Home route
 app.get('/', (req, res) => {
   res.send('API is running...');

@@ -1,5 +1,5 @@
 const express = require('express');
-const Product = require('../models/productModel'); // Adjust the path if needed
+const Product = require('../models/Products'); // Adjust the path if needed
 const router = express.Router();
 
 // @route    GET /api/products
@@ -32,10 +32,10 @@ router.get('/:id', async (req, res) => {
 // @route    POST /api/products
 // @desc     Create a new product
 // @access   Private (for admins or staff)
-router.post('/', async (req, res) => {
-  const { name, description, price, rating, category, imageUrl, stock } = req.body;
+router.post('/add', async (req, res) => {
+  const { name, description, price, rating, animal, imageUrl, stock } = req.body;
 
-  if (!name || !description || !price || !rating || !category || !imageUrl || !stock) {
+  if (!name || !description || !price || !rating || !animal || !imageUrl || !stock) {
     return res.status(400).json({ message: 'All fields are required' });
   }
 
@@ -45,7 +45,7 @@ router.post('/', async (req, res) => {
       description,
       price,
       rating,
-      category,
+      animal,
       imageUrl,
       stock,
     });
@@ -61,12 +61,12 @@ router.post('/', async (req, res) => {
 // @desc     Update a product
 // @access   Private (for admins or staff)
 router.put('/:id', async (req, res) => {
-  const { name, description, price, rating, category, imageUrl, stock } = req.body;
+  const { name, description, price, rating, animal, imageUrl, stock } = req.body;
 
   try {
     const updatedProduct = await Product.findByIdAndUpdate(
       req.params.id,
-      { name, description, price, rating, category, imageUrl, stock },
+      { name, description, price, rating, animal, imageUrl, stock },
       { new: true }
     );
     
