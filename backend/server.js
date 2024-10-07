@@ -36,6 +36,10 @@ app.use('/api/pets', petRoutes);
 const productRoutes = require('./routes/products');
 app.use('/api/products', productRoutes);
 
+// Checkout routes
+const checkoutRoutes = require('./routes/checkoutRoutes');
+app.use('/api/checkout', checkoutRoutes);
+
 // Home route
 app.get('/', (req, res) => {
   res.send('API is running...');

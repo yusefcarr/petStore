@@ -2,7 +2,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NotificationBar from './components/NotificationBar';
 import Navbar from  './components/Navbar';
-import Cart from './components/Cart';
+import CartPage from './components/CartPage';
+import { CartProvider } from './CartContext';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
@@ -14,13 +15,7 @@ import Services from './components/Services';
 import Pharmacy from './components/Pharmacy';
 import Newsletter from './components/Newsletter';
 import Community from './components/Community';
-// import SnakeShop from './SnakeShop'; // Individual Shop Pages
-// import TurtleShop from './TurtleShop';
-// import GeckoShop from './GeckoShop';
-// import ChameleonShop from './ChameleonShop';
-// import CrocodileShop from './CrocodileShop';
-// import BeardedDragonShop from './BeardedDragonShop';
-// import LizardShop from './LizardShop';
+import AnimalComponent from './components/AnimalComponent';
 
 
 function App() {
@@ -29,26 +24,24 @@ function App() {
     <div className="App">
       <NotificationBar />
       <Navbar/>
-      {/* <Cart /> */}
+      {/* <CartPage /> */}
+      <CartProvider>
       <Routes>
+      <Switch>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/contact' element={<Contact/>} />
         <Route path='/deals' element={<Deals/>} />
         <Route path='/shop' element={<Shop/>} />
-        {/* <Route path="./shop/snake" component={SnakeShop} />
-        <Route path="./shop/turtle" component={TurtleShop} />
-        <Route path="./shop/gecko" component={GeckoShop} />
-        <Route path="./shop/chameleon" component={ChameleonShop} />
-        <Route path="./shop/crocodile" component={CrocodileShop} />
-        <Route path="./shop/bearded-dragon" component={BeardedDragonShop} />
-        <Route path="./shop/lizard" component={LizardShop} /> */}
+        <Route path='animalshop' element={<AnimalComponent/>} />
         <Route path='/rewards' element={<Rewards/>} />
         <Route path='/services' element={<Services/>} />
         <Route path='/pharmacy' element={<Pharmacy/>} />
         <Route path='/newsletter' element={<Newsletter/>} />
         <Route path='/community' element={<Community/>} />
+        </Switch>
       </Routes>
+      </CartProvider>
       <Footer/>
       
     </div>
